@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
+import Routes from "./routes";
+import "./assets/styles/common.scss";
+import "./assets/styles/reset.scss";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Routes />, document.getElementById("root"));
