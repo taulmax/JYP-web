@@ -5,6 +5,5 @@ import { actionCreators } from "../store";
 export const useActions = () => {
   const dispatch = useDispatch();
 
-  // { searchRepositories: dispatch(searchRepositories)} 이런 느낌!
   return bindActionCreators(actionCreators, dispatch);
 };

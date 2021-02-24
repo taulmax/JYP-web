@@ -1,14 +1,9 @@
 import { Provider } from "react-redux";
 import { store } from "../store";
 import React from "react";
-import RepositoriesList from "./RepositoriesList";
 
 function App() {
-  return (
-    <Provider store={store}>
-      <RepositoriesList />
-    </Provider>
-  );
+  return <Provider store={store}></Provider>;
 }
 
 export default App;
