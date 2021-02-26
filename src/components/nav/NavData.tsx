@@ -1,20 +1,25 @@
-import { SVGS } from "../../assets/images/svgs";
+import React from "react";
+import { Beopjeom } from "../../assets/images/beopjeom";
+import { Judge } from "../../assets/images/judge";
+import { Home } from "../../assets/images/home";
+import { Help } from "../../assets/images/help";
 import { NavbarItem } from "../../interfaces/NavbarItem";
+import { ReactComponent as SVGIcon } from "../../assets/images/judge.svg";
 
 export const NavData: NavbarItem[] = [
   {
     title: "홈",
     path: "/home",
-    icon: SVGS.Home,
+    icon: <Home />,
   },
   {
     title: "법점",
     path: "/judge",
-    icon: SVGS.Judge,
+    icon: <Judge />,
   },
   {
     title: "도움말",
     path: "/help",
-    icon: SVGS.Help,
+    icon: <Help />,
   },
 ];

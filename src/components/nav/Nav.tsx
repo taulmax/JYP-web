@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { SVGS } from "../../assets/images/svgs";
+import { Beopjeom } from "../../assets/images/beopjeom";
 import { NavData } from "./NavData";
 import Submenu from "./Submenu";
 
@@ -19,7 +19,7 @@ export const Nav: React.FC = () => {
   return (
     <>
       <SidebarNav>
-        {SVGS.BeopJeom}
+        <Beopjeom />
         <SidebarWrap>
           {NavData.map((item, idx) => {
             return <Submenu key={idx} item={item} />;
