@@ -26,9 +26,6 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
-  h1, h2, h3, h4, h5, h6{
-    font-family:'Maven Pro', sans-serif;
-  }
   @media only screen and (max-width: 768px) {
     body {
       font-size: 12px;
