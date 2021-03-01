@@ -11,6 +11,7 @@ const SidebarNav = styled.div`
   background-color: #fff;
   position: fixed;
   top: 0;
+  z-index: 10;
 `;
 
 const SidebarWrap = styled.div``;
