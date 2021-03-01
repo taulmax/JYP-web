@@ -1,9 +1,11 @@
 import * as React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Nav } from "../components/nav/Nav";
-import { MainIcon, Home, Help } from "../pages/Preview";
 import styled from "styled-components";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Nav } from "../components/Nav";
+import { Signup } from "../pages/Signup";
+import { MainIcon, Home, Help } from "../pages/Preview";
 import { Court } from "../pages/court";
+import GlobalStyle from "../assets/styles/global-style";
 
 const MainWrapper = styled.div`
   position: absolute;
@@ -19,19 +21,23 @@ const SubWrapper = styled.div`
 
 const Routes: React.FC = () => {
   return (
-    <BrowserRouter>
-      <Nav />
-      <MainWrapper>
-        <SubWrapper>
-          <Switch>
-            <Route path="/beopjeom" component={MainIcon} exact></Route>
-            <Route path="/home" component={Home} exact></Route>
-            <Route path="/court" component={Court}></Route>
-            <Route path="/help" component={Help}></Route>
-          </Switch>
-        </SubWrapper>
-      </MainWrapper>
-    </BrowserRouter>
+    <>
+      <GlobalStyle />
+      <BrowserRouter>
+        <Nav />
+        <MainWrapper>
+          <SubWrapper>
+            <Switch>
+              <Route path="/beopjeom" component={MainIcon} exact></Route>
+              <Route path="/home" component={Home} exact></Route>
+              <Route path="/signup" component={Signup} exact></Route>
+              <Route path="/court" component={Court}></Route>
+              <Route path="/help" component={Help}></Route>
+            </Switch>
+          </SubWrapper>
+        </MainWrapper>
+      </BrowserRouter>
+    </>
   );
 };
 

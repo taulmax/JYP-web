@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-import { Nav } from "../../components/nav/Nav";
+import { Nav } from "../../components/Nav";
 
 export const Signup = () => {
   const [inputEmail, setInputEmail] = useState("");
